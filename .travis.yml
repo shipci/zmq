@@ -19,4 +19,4 @@ script: phpunit --coverage-text
 
 notifications:
   email: false
-#cache: true
+cache: true

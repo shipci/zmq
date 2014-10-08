@@ -22,3 +22,4 @@ notifications:
   email: false
   
 cache: true
+reset_minion: true

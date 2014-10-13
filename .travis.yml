@@ -1,4 +1,4 @@
-language: php
+#language: php
 
 php:
   - 5.4
@@ -13,10 +13,13 @@ before_script:
 
 
 
-script: phpunit --coverage-text
+script: 
+  - phpunit --coverage-text
+  - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/
+parallelized_test: true
 
 notifications:
   email: false
   
 cache: true
-reset-minion: true
+#reset-minion: true

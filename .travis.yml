@@ -21,5 +21,5 @@ parallelized_test: true
 notifications:
   email: false
   
-cache: true
+#cache: true
 #reset-minion: true
